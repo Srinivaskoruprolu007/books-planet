@@ -10,7 +10,7 @@ const BookOverview = ({
   totalCopies,
   availableCopies,
   description,
-  color,
+  coverColor,
   coverUrl,
 }: Book) => {
   return (
@@ -23,13 +23,13 @@ const BookOverview = ({
             <BookCover
               variant="wide"
               className="z-10 transform group-hover:-translate-y-1 transition duration-200"
-              coverColor={color}
+              coverColor={coverColor}
               coverImage={coverUrl}
             />
             <div className="absolute left-16 top-10 rotate-12 opacity-40 -z-10">
               <BookCover
                 variant="wide"
-                coverColor={color}
+                coverColor={coverColor}
                 coverImage={coverUrl}
               />
             </div>
